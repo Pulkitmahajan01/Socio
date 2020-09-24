@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    android:background="#fff"
+    app:contentPadding="2dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_default_img_black"
+            android:id="@+id/avatarIv"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"></com.blogspot.atifsoftwares.circularimageview.CircularImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/avatarIv"
+            android:text="Socio"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/nameTv"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentTv"
+            android:layout_toEndOf="@+id/avatarIv"
+            android:layout_below="@+id/nameTv"
+            android:text="This is the commnent!:)"
+            android:layout_toRightOf="@+id/avatarIv"
+            android:textColor="#000"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeTv"
+            android:layout_toEndOf="@+id/avatarIv"
+            android:layout_below="@+id/commentTv"
+            android:text="8/8/2020"
+            android:layout_toRightOf="@+id/avatarIv"></TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
